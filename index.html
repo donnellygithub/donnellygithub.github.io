@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SocialEase — Coming Soon</title>
+<meta name="description" content="SocialEase is under construction and will be available soon. Contact queries@socialeaseapp.com for details.">
+<style>
+  :root {
+    --ink: #1d2433;
+    --soft: #5c6675;
+    --paper: #f7f9fc;
+    --bubble: #ffffff;
+    --accent: #3e7bfa;
+    --accent-soft: #e3edff;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html, body { height: 100%; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--paper);
+    color: var(--ink);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    background-image:
+      radial-gradient(circle at 15% 20%, var(--accent-soft) 0%, transparent 35%),
+      radial-gradient(circle at 85% 80%, var(--accent-soft) 0%, transparent 35%);
+  }
+
+  main {
+    text-align: center;
+    max-width: 520px;
+    width: 100%;
+  }
+
+  /* Typing-indicator speech bubble */
+  .bubble {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--bubble);
+    border-radius: 24px;
+    padding: 18px 26px;
+    box-shadow: 0 6px 24px rgba(29, 36, 51, 0.10);
+    position: relative;
+    margin-bottom: 40px;
+    animation: float 4s ease-in-out infinite;
+  }
+
+  .bubble::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 28px;
+    width: 18px;
+    height: 18px;
+    background: var(--bubble);
+    border-radius: 0 0 4px 0;
+    transform: rotate(45deg);
+    box-shadow: 6px 6px 12px rgba(29, 36, 51, 0.04);
+  }
+
+  .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--accent);
+    animation: blink 1.4s infinite both;
+  }
+  .dot:nth-child(2) { animation-delay: 0.2s; }
+  .dot:nth-child(3) { animation-delay: 0.4s; }
+
+  @keyframes blink {
+    0%, 80%, 100% { opacity: 0.25; transform: translateY(0); }
+    40% { opacity: 1; transform: translateY(-3px); }
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-6px); }
+  }
+
+  /* Construction barrier */
+  .barrier {
+    margin: 0 auto 36px;
+    max-width: 360px;
+  }
+
+  .barrier .board {
+    height: 34px;
+    border-radius: 8px;
+    background: repeating-linear-gradient(
+      -45deg,
+      #ffc93c 0,
+      #ffc93c 22px,
+      #1d2433 22px,
+      #1d2433 44px
+    );
+    box-shadow: 0 4px 14px rgba(29, 36, 51, 0.18), inset 0 0 0 2px rgba(29, 36, 51, 0.85);
+  }
+
+  .barrier .legs {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 36px;
+  }
+
+  .barrier .leg {
+    width: 10px;
+    height: 30px;
+    background: #1d2433;
+    border-radius: 0 0 4px 4px;
+  }
+
+  h1 {
+    font-size: clamp(1.8rem, 5vw, 2.5rem);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin-bottom: 14px;
+  }
+
+  h1 .brand { color: var(--accent); }
+
+  p {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: var(--soft);
+    margin-bottom: 28px;
+  }
+
+  .contact {
+    display: inline-block;
+    background: var(--accent);
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 13px 26px;
+    border-radius: 999px;
+    transition: background 0.2s ease, transform 0.2s ease;
+  }
+
+  .contact:hover { background: #2f63d6; transform: translateY(-1px); }
+  .contact:focus-visible {
+    outline: 3px solid var(--accent);
+    outline-offset: 3px;
+  }
+
+  .email-note {
+    margin-top: 16px;
+    font-size: 0.9rem;
+    color: var(--soft);
+  }
+
+  .email-note a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+
+  .email-note a:hover { text-decoration: underline; }
+
+  @media (prefers-reduced-motion: reduce) {
+    .bubble, .dot { animation: none; }
+    .dot { opacity: 1; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <div class="bubble" aria-hidden="true">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+
+  <div class="barrier" aria-hidden="true">
+    <div class="board"></div>
+    <div class="legs">
+      <div class="leg"></div>
+      <div class="leg"></div>
+    </div>
+  </div>
+
+  <h1><span class="brand">SocialEase</span> is under construction</h1>
+
+  <p>We're busy building something great. This site will be available soon — thanks for your patience.</p>
+
+  <a class="contact" href="mailto:queries@socialeaseapp.com">Email us with queries</a>
+
+  <p class="email-note">Or write to <a href="mailto:queries@socialeaseapp.com">queries@socialeaseapp.com</a></p>
+</main>
+</body>
+</html>
