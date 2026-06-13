@@ -11,8 +11,9 @@
     --soft: #5c6675;
     --paper: #f7f9fc;
     --bubble: #ffffff;
-    --accent: #3e7bfa;
-    --accent-soft: #e3edff;
+    --accentBlue: #0264fe;
+    --accentGreen: #099d42
+    --accentBlue-soft: #e3edff;
   }
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -28,8 +29,8 @@
     justify-content: center;
     padding: 24px;
     background-image:
-      radial-gradient(circle at 15% 20%, var(--accent-soft) 0%, transparent 35%),
-      radial-gradient(circle at 85% 80%, var(--accent-soft) 0%, transparent 35%);
+      radial-gradient(circle at 15% 20%, var(--accentBlue-soft) 0%, transparent 35%),
+      radial-gradient(circle at 85% 80%, var(--accentBlue-soft) 0%, transparent 35%);
   }
 
   main {
@@ -69,7 +70,7 @@
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background: var(--accent);
+    background: var(--accentBlue);
     animation: blink 1.4s infinite both;
   }
   .dot:nth-child(2) { animation-delay: 0.2s; }
@@ -124,8 +125,9 @@
     margin-bottom: 14px;
   }
 
-  h1 .brand { color: var(--accent); }
+  h1 .brand { color: var(--accentBlue); }
 
+  h1 .brand2 { color: var(--accentGreen); }
   p {
     font-size: 1.05rem;
     line-height: 1.6;
@@ -135,7 +137,7 @@
 
   .contact {
     display: inline-block;
-    background: var(--accent);
+    background: var(--accentBlue);
     color: #fff;
     text-decoration: none;
     font-weight: 600;
@@ -146,7 +148,7 @@
 
   .contact:hover { background: #2f63d6; transform: translateY(-1px); }
   .contact:focus-visible {
-    outline: 3px solid var(--accent);
+    outline: 3px solid var(--accentBlue);
     outline-offset: 3px;
   }
 
@@ -157,7 +159,7 @@
   }
 
   .email-note a {
-    color: var(--accent);
+    color: var(--accentBlue);
     text-decoration: none;
   }
 
@@ -185,7 +187,7 @@
     </div>
   </div>
 
-  <h1><span class="brand">SocialEase</span> is under construction</h1>
+  <h1><span class="brand">Social</span><span class="brand2">Ease</span> is under construction</h1>
 
   <p>We're busy building something great. This site will be available soon — thanks for your patience.</p>
 
