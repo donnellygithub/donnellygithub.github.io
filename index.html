@@ -3,197 +3,87 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SocialEase — Coming Soon</title>
-<meta name="description" content="SocialEase is under construction and will be available soon. Contact queries@socialeaseapp.com for details.">
-<style>
-  :root {
-    --ink: #1d2433;
-    --soft: #5c6675;
-    --paper: #f7f9fc;
-    --bubble: #ffffff;
-    --accentBlue: #0264fe;
-    --accentGreen: #099d42;
-    --accentBlue-soft: #e3edff;
-  }
-
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-
-  html, body { height: 100%; }
-
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    background: var(--paper);
-    color: var(--ink);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 24px;
-    background-image:
-      radial-gradient(circle at 15% 20%, var(--accentBlue-soft) 0%, transparent 35%),
-      radial-gradient(circle at 85% 80%, var(--accentBlue-soft) 0%, transparent 35%);
-  }
-
-  main {
-    text-align: center;
-    max-width: 520px;
-    width: 100%;
-  }
-
-  /* Typing-indicator speech bubble */
-  .bubble {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    background: var(--bubble);
-    border-radius: 24px;
-    padding: 18px 26px;
-    box-shadow: 0 6px 24px rgba(29, 36, 51, 0.10);
-    position: relative;
-    margin-bottom: 40px;
-    animation: float 4s ease-in-out infinite;
-  }
-
-  .bubble::after {
-    content: "";
-    position: absolute;
-    bottom: -8px;
-    left: 28px;
-    width: 18px;
-    height: 18px;
-    background: var(--bubble);
-    border-radius: 0 0 4px 0;
-    transform: rotate(45deg);
-    box-shadow: 6px 6px 12px rgba(29, 36, 51, 0.04);
-  }
-
-  .dot {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background: var(--accentBlue);
-    animation: blink 1.4s infinite both;
-  }
-  .dot:nth-child(2) { animation-delay: 0.2s; }
-  .dot:nth-child(3) { animation-delay: 0.4s; }
-
-  @keyframes blink {
-    0%, 80%, 100% { opacity: 0.25; transform: translateY(0); }
-    40% { opacity: 1; transform: translateY(-3px); }
-  }
-
-  @keyframes float {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-6px); }
-  }
-
-  /* Construction barrier */
-  .barrier {
-    margin: 0 auto 36px;
-    max-width: 360px;
-  }
-
-  .barrier .board {
-    height: 34px;
-    border-radius: 8px;
-    background: repeating-linear-gradient(
-      -45deg,
-      #ffc93c 0,
-      #ffc93c 22px,
-      #1d2433 22px,
-      #1d2433 44px
-    );
-    box-shadow: 0 4px 14px rgba(29, 36, 51, 0.18), inset 0 0 0 2px rgba(29, 36, 51, 0.85);
-  }
-
-  .barrier .legs {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 36px;
-  }
-
-  .barrier .leg {
-    width: 10px;
-    height: 30px;
-    background: #1d2433;
-    border-radius: 0 0 4px 4px;
-  }
-
-  h1 {
-    font-size: clamp(1.8rem, 5vw, 2.5rem);
-    font-weight: 700;
-    letter-spacing: -0.02em;
-    margin-bottom: 14px;
-  }
-
-  h1 .brand { color: var(--accentBlue); }
-
-  h1 .branchGreen { color: var(--accentGreen); }
-  p {
-    font-size: 1.05rem;
-    line-height: 1.6;
-    color: var(--soft);
-    margin-bottom: 28px;
-  }
-
-  .contact {
-    display: inline-block;
-    background: var(--accentBlue);
-    color: #fff;
-    text-decoration: none;
-    font-weight: 600;
-    padding: 13px 26px;
-    border-radius: 999px;
-    transition: background 0.2s ease, transform 0.2s ease;
-  }
-
-  .contact:hover { background: #2f63d6; transform: translateY(-1px); }
-  .contact:focus-visible {
-    outline: 3px solid var(--accentBlue);
-    outline-offset: 3px;
-  }
-
-  .email-note {
-    margin-top: 16px;
-    font-size: 0.9rem;
-    color: var(--soft);
-  }
-
-  .email-note a {
-    color: var(--accentBlue);
-    text-decoration: none;
-  }
-
-  .email-note a:hover { text-decoration: underline; }
-
-  @media (prefers-reduced-motion: reduce) {
-    .bubble, .dot { animation: none; }
-    .dot { opacity: 1; }
-  }
-</style>
+<title>SocialEase — Social stories, made simple</title>
+<meta name="description" content="SocialEase helps families, carers and educators build personalised, step-by-step visual social stories for children and individuals with communication needs.">
+<link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
+
+<header class="site-header">
+  <div class="nav-wrap">
+    <a href="index.html" class="logo"><span class="brand-blue">Social</span><span class="brand-green">Ease</span></a>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="app.html">SocialEase App</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
 <main>
-  <div class="bubble" aria-hidden="true">
-    <span class="dot"></span>
-    <span class="dot"></span>
-    <span class="dot"></span>
-  </div>
 
-  <div class="barrier" aria-hidden="true">
-    <div class="board"></div>
-    <div class="legs">
-      <div class="leg"></div>
-      <div class="leg"></div>
+  <section class="hero">
+    <div class="bubble" aria-hidden="true">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
     </div>
-  </div>
 
-  <h1><span class="brand">Social</span><span class="branchGreen">Ease</span> is under construction</h1>
+    <h1><span class="brand-blue">Social</span><span class="brand-green">Ease</span> — social stories, made simple</h1>
+    <p class="lede" style="margin: 0 auto 28px;">
+      SocialEase helps families, carers and educators build personalised, step-by-step visual
+      stories that help children and individuals with communication needs feel prepared,
+      understood, and confident.
+    </p>
 
-  <p>We're busy building, but this site and SocialEase will be available soon. <br>Thanks for your patience.</p>
+    <div class="btn-row">
+      <a class="btn btn-primary" href="app.html">See how it works</a>
+      <a class="btn btn-secondary" href="contact.html">Get in touch</a>
+    </div>
+  </section>
 
-  <a class="contact" href="mailto:queries@socialeaseapp.com">Email us with queries</a>
-  <a href="www.socialeaseapp.com/PrivacyPolicy/">Privacy Policy</a>
-  <p class="email-note">(Or use <a href="mailto:queries@socialeaseapp.com">queries@socialeaseapp.com</a>)</p>
+  <section class="container-wide">
+    <h2 style="margin-top:0;">Why families use SocialEase</h2>
+    <div class="grid">
+      <div class="card">
+        <span class="emoji" aria-hidden="true">📖</span>
+        <h3>Build custom stories</h3>
+        <p>Combine your own photos, text, emoji and background colours into step-by-step
+          story pages tailored to each person's needs.</p>
+      </div>
+      <div class="card">
+        <span class="emoji" aria-hidden="true">🎙️</span>
+        <h3>Add your voice</h3>
+        <p>Record audio narration for any page, so a story can be read aloud in a
+          familiar, reassuring voice.</p>
+      </div>
+      <div class="card">
+        <span class="emoji" aria-hidden="true">☁️</span>
+        <h3>Stay in sync</h3>
+        <p>Enable iCloud and your stories, profiles and settings sync automatically and
+          securely across your Apple devices.</p>
+      </div>
+      <div class="card">
+        <span class="emoji" aria-hidden="true">🔒</span>
+        <h3>Privacy by design</h3>
+        <p>Everything stays on your device or in your own iCloud account. We don't run
+          servers, collect analytics, or share your data with anyone.</p>
+      </div>
+    </div>
+
+    <div class="btn-row" style="margin-top: 40px;">
+      <a class="btn btn-primary" href="app.html">Explore the app</a>
+      <a class="btn btn-secondary" href="https://apps.apple.com/search?term=SocialEase" target="_blank" rel="noopener">Find us on the App Store</a>
+    </div>
+  </section>
+
 </main>
+
+<footer class="site-footer">
+  <p>&copy; 2026 SocialEase. All rights reserved. &middot;
+    <a href="mailto:queries@socialeaseapp.com">queries@socialeaseapp.com</a></p>
+</footer>
+
 </body>
 </html>
