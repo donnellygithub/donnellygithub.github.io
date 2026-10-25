@@ -145,7 +145,7 @@ hr {
 
 .meta {
   font-size: 0.875rem;
-  color: #888;
+  color: var(--soft);
   margin-bottom: 40px;
 }
 
@@ -280,7 +280,7 @@ hr {
 
 .site-footer p {
   font-size: 0.875rem;
-  color: #888;
+  color: var(--soft);
 }
 
 .site-footer a { color: var(--soft); }
