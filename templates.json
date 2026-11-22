@@ -80,7 +80,7 @@
       "icon": "🛒",
       "description": "A trip to the supermarket",
       "status": "live",
-      "version": 1,
+      "version": 2,
       "pages": [
         {
           "emoji": "🛒",
@@ -100,17 +100,26 @@
         {
           "emoji": "🛒",
           "text": "I can help push the trolley through the shop.",
-          "bg": "#06D6A0"
+          "bg": "#06D6A0",
+          "textByRegion": {
+            "US": "I can help push the cart through the store."
+          }
         },
         {
           "emoji": "🍎",
           "text": "We will put the food into the trolley as we go around.",
-          "bg": "#F4A261"
+          "bg": "#F4A261",
+          "textByRegion": {
+            "US": "We will put the food into the cart as we go around."
+          }
         },
         {
           "emoji": "🔄",
           "text": "Sometimes the shop has run out of something. That is OK, we can choose something else.",
-          "bg": "#74B3CE"
+          "bg": "#74B3CE",
+          "textByRegion": {
+            "US": "Sometimes the store has run out of something. That is OK, we can choose something else."
+          }
         },
         {
           "emoji": "💳",
@@ -131,7 +140,7 @@
       "icon": "🚌",
       "description": "Using public transport",
       "status": "live",
-      "version": 2,
+      "version": 3,
       "pages": [
         {
           "emoji": "🚌",
@@ -140,7 +149,7 @@
         },
         {
           "emoji": "🛑",
-          "text": "I wait at the bus stop. If the bus is late, the sign might show how long it will be.",
+          "text": "I will wait at the bus stop. The bus usually comes soon. Sometimes it is late, and the sign at the stop might show how long it will be.",
           "bg": "#74B3CE"
         },
         {
@@ -155,7 +164,7 @@
         },
         {
           "emoji": "🪑",
-          "text": "If there is a free seat, I can sit down. If not, I can hold on to a pole.",
+          "text": "If there is a free seat, I can sit down. If the bus is full, I can hold on to a pole or handle.",
           "bg": "#F4A261"
         },
         {
@@ -166,7 +175,10 @@
         {
           "emoji": "🛎️",
           "text": "When my stop is coming up, I can press the bell to tell the driver.",
-          "bg": "#C8A8E9"
+          "bg": "#C8A8E9",
+          "textByRegion": {
+            "US": "When my stop is coming up, I can let the driver know it's time to get off."
+          }
         },
         {
           "emoji": "😊",
@@ -182,7 +194,7 @@
       "icon": "🌙",
       "description": "Wind-down steps for sleep",
       "status": "live",
-      "version": 1,
+      "version": 2,
       "pages": [
         {
           "emoji": "🌙",
@@ -202,7 +214,10 @@
         {
           "emoji": "👕",
           "text": "I put on my comfortable pyjamas.",
-          "bg": "#06D6A0"
+          "bg": "#06D6A0",
+          "textByRegion": {
+            "US": "I put on my comfortable pajamas."
+          }
         },
         {
           "emoji": "📖",
@@ -228,7 +243,7 @@
       "icon": "🏥",
       "description": "What to expect at the clinic",
       "status": "live",
-      "version": 1,
+      "version": 2,
       "pages": [
         {
           "emoji": "🏥",
@@ -238,7 +253,10 @@
         {
           "emoji": "🚗",
           "text": "I will travel to the doctor's surgery with my family.",
-          "bg": "#74B3CE"
+          "bg": "#74B3CE",
+          "textByRegion": {
+            "US": "I will travel to the doctor's office with my family."
+          }
         },
         {
           "emoji": "🪑",
@@ -274,7 +292,7 @@
       "icon": "🦷",
       "description": "Tooth check-up steps",
       "status": "live",
-      "version": 1,
+      "version": 2,
       "pages": [
         {
           "emoji": "🦷",
@@ -284,7 +302,10 @@
         {
           "emoji": "🚗",
           "text": "I will go to the dentist surgery with my family.",
-          "bg": "#74B3CE"
+          "bg": "#74B3CE",
+          "textByRegion": {
+            "US": "I will go to the dentist's office with my family."
+          }
         },
         {
           "emoji": "🪑",
@@ -320,7 +341,7 @@
       "icon": "💉",
       "description": "The winter flu vaccine",
       "status": "live",
-      "version": 2,
+      "version": 3,
       "pages": [
         {
           "emoji": "💉",
@@ -335,7 +356,10 @@
         {
           "emoji": "🏫",
           "text": "I might have my vaccine at school, at the doctor's surgery, or at a pharmacy.",
-          "bg": "#C8A8E9"
+          "bg": "#C8A8E9",
+          "textByRegion": {
+            "US": "I might have my vaccine at school, at the doctor's office, or at a pharmacy."
+          }
         },
         {
           "emoji": "🧑‍⚕️",
@@ -344,27 +368,30 @@
         },
         {
           "emoji": "👃",
-          "text": "Most children have the vaccine as a quick spray up the nose. It might feel tickly or cold.",
+          "text": "Most children have the vaccine as a quick spray up the nose. It might feel tickly or cold for a moment.",
           "bg": "#F4A261"
         },
         {
           "emoji": "💪",
-          "text": "Some people have a small jab in the arm instead. It might feel like a quick scratch.",
-          "bg": "#FFD166"
+          "text": "Some people have a small jab in the arm instead. It might feel like a quick scratch, and it is over very quickly.",
+          "bg": "#FFD166",
+          "textByRegion": {
+            "US": "Some people have a small shot in the arm instead. It might feel like a quick scratch, and it is over very quickly."
+          }
         },
         {
           "emoji": "🧸",
-          "text": "While the nurse gives me the vaccine, I can hold a toy, squeeze a hand, or breathe slowly.",
+          "text": "I can hold a favourite toy, squeeze someone's hand, or take slow deep breaths while the nurse gives me the vaccine.",
           "bg": "#C8A8E9"
         },
         {
           "emoji": "🤒",
-          "text": "Afterwards my nose might be runny, or my arm might feel sore. That is OK. It soon goes away.",
+          "text": "Afterwards my nose might be runny, or my arm might feel a bit sore. That is OK. It usually goes away in a day or two.",
           "bg": "#74B3CE"
         },
         {
           "emoji": "😊",
-          "text": "Now I have helped keep myself and others healthy. I can tell my grown-up how it felt.",
+          "text": "When it is finished, I have helped keep myself and other people healthy. I can tell my grown-up how it felt.",
           "bg": "#06D6A0"
         }
       ]
@@ -422,68 +449,17 @@
     },
     {
       "id": "halloween",
-      "category": "seasonal",
-      "title": "Halloween",
-      "icon": "🎃",
-      "description": "Costumes and trick or treating",
-      "status": "live",
-      "version": 2,
-      "pages": [
-        {
-          "emoji": "🎃",
-          "text": "Halloween is on the 31st of October. Lots of people dress up and have fun.",
-          "bg": "#F4A261"
-        },
-        {
-          "emoji": "👻",
-          "text": "Some people wear costumes and masks. They might look scary or silly, but it is just a person dressed up.",
-          "bg": "#C8A8E9"
-        },
-        {
-          "emoji": "🧙",
-          "text": "I can choose a costume, or choose not to wear one. If it feels itchy, I can tell my grown-up.",
-          "bg": "#74B3CE"
-        },
-        {
-          "emoji": "🏠",
-          "text": "When we go trick or treating, my grown-up stays with me. We knock at houses with a pumpkin outside.",
-          "bg": "#FFD166"
-        },
-        {
-          "emoji": "🚪",
-          "text": "I can knock on the door or ring the bell. When the door opens, I can say 'trick or treat!'",
-          "bg": "#06D6A0"
-        },
-        {
-          "emoji": "🍬",
-          "text": "The person might offer me some sweets. I usually take one or two and say 'thank you'.",
-          "bg": "#F4A261"
-        },
-        {
-          "emoji": "🔊",
-          "text": "It might be dark and noisy, with fireworks. I can wear ear defenders, or ask my grown-up for a break.",
-          "bg": "#C8A8E9"
-        },
-        {
-          "emoji": "🍭",
-          "text": "When we get home, my grown-up will check my sweets before I eat them.",
-          "bg": "#74B3CE"
-        },
-        {
-          "emoji": "😊",
-          "text": "Halloween only happens once a year. When it is over, I can tell my grown-up what I enjoyed.",
-          "bg": "#06D6A0"
-        }
-      ]
+      "status": "withdrawn",
+      "version": 3
     },
     {
       "id": "christmas",
       "category": "seasonal",
       "title": "Christmas",
       "icon": "🎄",
-      "description": "Trees, presents and visitors",
+      "description": "Decorations, presents and visitors",
       "status": "live",
-      "version": 2,
+      "version": 3,
       "pages": [
         {
           "emoji": "🎄",
@@ -492,43 +468,111 @@
         },
         {
           "emoji": "✨",
-          "text": "Before Christmas, people put up a tree and twinkly lights. Our home might look different. That is OK.",
+          "text": "Before Christmas, people put up decorations like a Christmas tree and twinkly lights. Our home might look different for a while. That is OK.",
           "bg": "#FFD166"
         },
         {
           "emoji": "🎅",
-          "text": "I might see Father Christmas. He is a person in a red suit. I can say hello or wave.",
-          "bg": "#F4A261"
+          "text": "I might see Father Christmas at the shops or at school. He is a person dressed in a red suit. I can say hello, or wave from further away.",
+          "bg": "#F4A261",
+          "textByRegion": {
+            "US": "I might see Santa at the shops or at school. He is a person dressed in a red suit. I can say hello, or wave from further away."
+          }
         },
         {
           "emoji": "🎁",
-          "text": "On Christmas Day, I might get presents. They are wrapped, so I won't know what is inside until opened.",
+          "text": "On Christmas Day, I might get some presents. They are wrapped in paper, so I won't know what is inside until I open them.",
           "bg": "#C8A8E9"
         },
         {
           "emoji": "🙏",
-          "text": "Sometimes I might get a present I wasn't expecting. I can say 'thank you' to the person who gave it.",
+          "text": "Sometimes I might get a present I wasn't expecting. I can say 'thank you' to the person who gave it to me.",
           "bg": "#74B3CE"
         },
         {
           "emoji": "👨‍👩‍👧",
-          "text": "Family or friends might visit. The house might be busy and loud. I can ask for a quiet break.",
+          "text": "Family or friends might come to visit. The house might be busier and louder than usual. If I need a quiet break, I can tell my grown-up.",
           "bg": "#FFD166"
         },
         {
           "emoji": "🍽️",
-          "text": "We might have a big Christmas dinner with new foods. I can try a little, or eat foods I like.",
+          "text": "We might have a big Christmas dinner with some new foods. I can try a little, or eat the foods I like.",
           "bg": "#06D6A0"
         },
         {
           "emoji": "💥",
           "text": "Christmas crackers make a loud bang when they are pulled. I can cover my ears, or watch from further away.",
-          "bg": "#F4A261"
+          "bg": "#F4A261",
+          "textByRegion": {
+            "US": "Opening presents can get loud and noisy. I can cover my ears, or watch from further away."
+          }
         },
         {
           "emoji": "😊",
-          "text": "After Christmas, the decorations are put away and things go back to normal. I can say what I enjoyed.",
+          "text": "After Christmas, the decorations are put away and things go back to normal. I can tell my grown-up what I enjoyed.",
           "bg": "#C8A8E9"
+        }
+      ]
+    },
+    {
+      "id": "thanksgiving",
+      "category": "seasonal",
+      "title": "Thanksgiving",
+      "icon": "🦃",
+      "description": "Turkey, family and giving thanks",
+      "status": "test",
+      "version": 1,
+      "regions": [
+        "US"
+      ],
+      "pages": [
+        {
+          "emoji": "🦃",
+          "text": "Thanksgiving happens once a year, in autumn. Families usually get together to share a meal.",
+          "bg": "#FFD166",
+          "textByRegion": {
+            "US": "Thanksgiving happens once a year, in fall. Families usually get together to share a meal."
+          }
+        },
+        {
+          "emoji": "🚗",
+          "text": "My family might travel to see relatives, or relatives might come to us.",
+          "bg": "#74B3CE"
+        },
+        {
+          "emoji": "🍳",
+          "text": "The house might smell of cooking all day. People often help in the kitchen.",
+          "bg": "#C8A8E9"
+        },
+        {
+          "emoji": "🦃",
+          "text": "Lots of families cook a big turkey. Some have other foods they like instead.",
+          "bg": "#06D6A0"
+        },
+        {
+          "emoji": "👂",
+          "text": "The house might feel busy and loud. If I need a quiet break, I can tell my grown-up.",
+          "bg": "#F4A261"
+        },
+        {
+          "emoji": "🍽️",
+          "text": "Everyone usually sits down together for a big meal. There might be lots of different foods to try.",
+          "bg": "#FFD166"
+        },
+        {
+          "emoji": "🥧",
+          "text": "I can try a little of each food, or eat foods I already like.",
+          "bg": "#74B3CE"
+        },
+        {
+          "emoji": "🙏",
+          "text": "Some families take turns saying one thing they feel thankful for today.",
+          "bg": "#C8A8E9"
+        },
+        {
+          "emoji": "😊",
+          "text": "After the meal, things get quieter. I can tell my grown-up what I enjoyed about Thanksgiving.",
+          "bg": "#06D6A0"
         }
       ]
     }
